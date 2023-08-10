@@ -26,6 +26,8 @@ body {
     height: 680px;
     margin: auto;
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .branding {
@@ -97,6 +99,7 @@ a {
 
 a:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .forgot {
@@ -153,6 +156,29 @@ ul {
     font-size: 0.75rem;
     color: #7e7e7e;
     line-height: 1.5;
-    gap: 15px;
 }
 
+li {
+    margin-right: 15px;
+}
+
+@media (min-width: 890px) {
+    .main-wrapper {
+        width: 90%;
+        max-width: 980px;
+        flex-direction: row;
+        padding-top: 70px;
+        justify-content: space-between;
+        
+}
+
+.branding {
+    text-align: left;
+    padding-top: 80px;
+    width: 480px;
+}
+
+.slogan {
+    font-size: 1.7rem;
+}
+}
